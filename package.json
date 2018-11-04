@@ -1,0 +1,23 @@
+{
+  "name": "book-manager-web",
+  "version": "1.0.0",
+  "description": "This is the website for Book Manager app",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdTechies/book-manager-web.git"
+  },
+  "keywords": [
+    "mdl",
+    "book-manager"
+  ],
+  "author": "Shahidul Islam Majumder <hello@shahid.pro>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bdTechies/book-manager-web/issues"
+  },
+  "homepage": "https://github.com/bdTechies/book-manager-web#readme"
+}

@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.img-responsive {
+  width: 100%;
+  height: auto; }
+
+.mdl-layout__header {
+  color: #5b1f7c;
+  min-height: 48px; }
+  .mdl-layout__header .mdl-layout__header-row {
+    padding: 0;
+    height: 48px; }
+  .mdl-layout__header .mdl-navigation__link {
+    color: #5b1f7c; }
+
+.hero-section {
+  min-height: calc(640px - 64px);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hero-section .download-btn {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16px; }
+    .hero-section .download-btn li {
+      display: inline-block;
+      margin-right: 8px; }
+      .hero-section .download-btn li .platfor-label {
+        padding: 4px;
+        cursor: pointer; }
+      .hero-section .download-btn li .platfor-label.active-btn {
+        font-weight: bold;
+        color: #504854; }
+      .hero-section .download-btn li::after {
+        content: "|";
+        padding-left: 8px; }
+      .hero-section .download-btn li:last-child::after {
+        content: "";
+        padding-left: 0; }
+  .hero-section #hero-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1000; }

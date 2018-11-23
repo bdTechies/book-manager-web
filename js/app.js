@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-  console.log(platform.description);
   var os = platform.os.family;
-  var linuxBtn = document.querySelector(".linux-os");
   var downloadBtn = document.querySelector(".download-url");
+  var linuxBtn = document.querySelector(".linux-os");
   var windowsBtn = document.querySelector(".windows-os");
   var macBtn = document.querySelector(".mac-os");
-  switch (os) {
+
+  switch (true) {
     case os.indexOf("Linux") !== -1:
       downloadBtn.href = "linux-url";
       windowsBtn.classList.remove("active-btn");
@@ -25,8 +25,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
       macBtn.className += " active-btn";
       break;
     default:
+      downloadBtn.href = "windows-url";
       linuxBtn.classList.remove("active-btn");
       macBtn.classList.remove("active-btn");
       windowsBtn.className += " active-btn";
+      break;
   }
 });

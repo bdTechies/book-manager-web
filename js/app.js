@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   console.log(platform.description);
   var os = platform.os.family;
   var linuxBtn = document.querySelector(".linux-os");
-  var downloadBtn = document.querySelector(".download-btn");
+  var downloadBtn = document.querySelector(".download-url");
   var windowsBtn = document.querySelector(".windows-os");
   var macBtn = document.querySelector(".mac-os");
   switch (os) {

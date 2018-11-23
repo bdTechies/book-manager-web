@@ -33,10 +33,10 @@
     .hero-section .download-btn li {
       display: inline-block;
       margin-right: 8px; }
-      .hero-section .download-btn li .platfor-label {
+      .hero-section .download-btn li .platform-label {
         padding: 4px;
         cursor: pointer; }
-      .hero-section .download-btn li .platfor-label.active-btn {
+      .hero-section .download-btn li .platform-label.active-btn {
         font-weight: bold;
         color: #504854; }
       .hero-section .download-btn li::after {

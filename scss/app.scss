@@ -46,12 +46,12 @@
       display: inline-block;
       margin-right: 8px;
 
-      .platfor-label {
+      .platform-label {
         padding: 4px;
         cursor: pointer;
       }
 
-      .platfor-label.active-btn {
+      .platform-label.active-btn {
         font-weight: bold;
         color: $title_color;
       }

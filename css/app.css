@@ -29,8 +29,23 @@
     position: fixed;
     width: 100%;
     max-width: 1200px; }
+    .mdl-layout__header .mdl-layout__header-row .gh-stars {
+      padding-top: 6px; }
   .mdl-layout__header .mdl-navigation__link {
     color: #5b1f7c; }
+
+.mdl-layout-title a {
+  color: #5b1f7c;
+  text-decoration: none;
+  font-size: 1em; }
+  .mdl-layout-title a span {
+    margin-left: 8px;
+    position: relative;
+    top: 2px; }
+
+.mdl-layout-title img {
+  width: 30px;
+  height: auto; }
 
 .hero-section {
   min-height: calc(640px - 64px);

@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 
   downloadBtn.addEventListener("click", function() {
+    console.log("Download clicked!");
     ga("send", "event", "Download Analytics", "download", os);
   });
 });

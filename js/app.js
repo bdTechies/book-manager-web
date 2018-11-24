@@ -52,4 +52,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     windowsBtn.classList.remove("active-btn");
     macBtn.className += " active-btn";
   });
+
+  downloadBtn.addEventListener("click", function() {
+    ga("send", "event", "Download Analytics", "download", os);
+  });
 });

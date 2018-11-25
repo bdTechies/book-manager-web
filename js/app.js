@@ -17,6 +17,49 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var windowsBtn = document.querySelector(".windows-os");
   var macBtn = document.querySelector(".mac-os");
 
+  var windowsOsNameList = ["Cygwin", "Windows 98;", "Windows "];
+  var macOsNameList = ["Mac OS X", "Macintosh", "Mac"];
+  var linuxOsNameList = [
+    "CentOS",
+    "Debian",
+    "Fedora",
+    "FreeBSD",
+    "Gentoo",
+    "Haiku",
+    "Kubuntu",
+    "Linux Mint",
+    "OpenBSD",
+    "Red Hat",
+    "SuSE",
+    "Ubuntu",
+    "Xubuntu",
+    "hpwOS",
+    "webOS ",
+    "webOS",
+    "Tizen",
+    "Linux"
+  ];
+
+  function checkOsName(name, group) {
+    switch (group) {
+      case "linux":
+        idx = linuxOsNameList.findIndex(function(osName) {
+          return name === osName;
+        });
+        return idx > -1 ? true : false;
+      case "mac":
+        idx = macOsNameList.findIndex(function(osName) {
+          return name === osName;
+        });
+        return idx > -1 ? true : false;
+      default:
+        idx = windowsOsNameList.findIndex(function(osName) {
+          return name === osName;
+        });
+        return idx > -1 ? true : false;
+    }
+  }
+
   function addDownloadData(url) {
     var now = new Date();
     var downloadedOn = now.toISOString();
@@ -31,19 +74,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
 
   switch (true) {
-    case os.indexOf("Linux") !== -1:
+    case checkOsName(os, "linux"):
       downloadBtn.href = "linux-url";
       windowsBtn.classList.remove("active-btn");
       macBtn.classList.remove("active-btn");
       linuxBtn.className += " active-btn";
       break;
-    case os.indexOf("Win") !== -1:
+    case checkOsName(os, "windows"):
       downloadBtn.href = "windows-url";
       linuxBtn.classList.remove("active-btn");
       macBtn.classList.remove("active-btn");
       windowsBtn.className += " active-btn";
       break;
-    case os.indexOf("Mac") !== -1:
+    case checkOsName(os, "mac"):
       downloadBtn.href = "mac-url";
       linuxBtn.classList.remove("active-btn");
       windowsBtn.classList.remove("active-btn");

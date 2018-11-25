@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+html {
+  background: url("/img/hero-bg-pattern.svg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -104,14 +111,14 @@
     }
   }
 
-  #hero-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1000;
-  }
+  // #hero-bg {
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   z-index: -1000;
+  // }
 }
 
 .feature-section {

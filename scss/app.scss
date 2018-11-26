@@ -161,13 +161,18 @@ html {
     }
   }
 
-  .info-box {
+  .info-box-container {
     margin-top: 32px;
     text-align: center;
-    padding: 16px;
-    border-radius: 5px;
-    border: 2px solid rgba($primary_color, 0.3);
-    background: white;
+    .info-box {
+      margin-top: 32px;
+      text-align: center;
+      padding: 16px;
+      border-radius: 5px;
+      border: 2px solid rgba($primary_color, 0.3);
+      background: white;
+      display: inline-block;
+    }
   }
 }
 
@@ -181,5 +186,20 @@ html {
   #hero-bg {
     display: none;
   }
+  .feature-card {
+    margin-bottom: 24px;
+  }
 }
 // @media all and (max-width: 480px) {};
+
+@media (min-width: 840px) {
+  .feature-section {
+    .mdl-cell--3-col {
+      width: calc(25% - 32px);
+    }
+
+    .mdl-cell {
+      margin: 16px;
+    }
+  }
+}

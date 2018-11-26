@@ -17,6 +17,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var windowsBtn = document.querySelector(".windows-os");
   var macBtn = document.querySelector(".mac-os");
 
+  var linuxDownloadUrl =
+    "https://github.com/bdTechies/book-manager/releases/download/v1.0.0/book-manager_1.0.0_amd64.deb";
+  var macDownloadUrl =
+    "https://github.com/bdTechies/book-manager/releases/download/v1.0.0/book-manager_1.0.0.dmg";
+  var windowsDownloadUrl =
+    "https://github.com/bdTechies/book-manager/releases/download/v1.0.0/book-manager_1.0.0.exe";
+  var defaultDownloadUrl =
+    "https://github.com/bdTechies/book-manager/releases/tag/v1.0.0";
+
   var windowsOsNameList = ["Cygwin", "Windows 98;", "Windows "];
   var macOsNameList = ["Mac OS X", "Macintosh", "Mac"];
   var linuxOsNameList = [
@@ -75,47 +84,47 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   switch (true) {
     case checkOsName(os, "linux"):
-      downloadBtn.href = "linux-url";
+      downloadBtn.href = linuxDownloadUrl;
       windowsBtn.classList.remove("active-btn");
       macBtn.classList.remove("active-btn");
       linuxBtn.className += " active-btn";
       break;
     case checkOsName(os, "windows"):
-      downloadBtn.href = "windows-url";
+      downloadBtn.href = windowsDownloadUrl;
       linuxBtn.classList.remove("active-btn");
       macBtn.classList.remove("active-btn");
       windowsBtn.className += " active-btn";
       break;
     case checkOsName(os, "mac"):
-      downloadBtn.href = "mac-url";
+      downloadBtn.href = macDownloadUrl;
       linuxBtn.classList.remove("active-btn");
       windowsBtn.classList.remove("active-btn");
       macBtn.className += " active-btn";
       break;
     default:
-      downloadBtn.href = "windows-url";
+      downloadBtn.href = defaultDownloadUrl;
       linuxBtn.classList.remove("active-btn");
       macBtn.classList.remove("active-btn");
-      windowsBtn.className += " active-btn";
+      windowsBtn.classList.remove("active-btn");
       break;
   }
 
   linuxBtn.addEventListener("click", function() {
-    downloadBtn.href = "linux-url";
+    downloadBtn.href = linuxDownloadUrl;
     windowsBtn.classList.remove("active-btn");
     macBtn.classList.remove("active-btn");
     linuxBtn.className += " active-btn";
   });
 
   windowsBtn.addEventListener("click", function() {
-    downloadBtn.href = "windows-url";
+    downloadBtn.href = windowsDownloadUrl;
     linuxBtn.classList.remove("active-btn");
     macBtn.classList.remove("active-btn");
     windowsBtn.className += " active-btn";
   });
 
   macBtn.addEventListener("click", function() {
-    downloadBtn.href = "mac-url";
+    downloadBtn.href = macDownloadUrl;
     linuxBtn.classList.remove("active-btn");
     windowsBtn.classList.remove("active-btn");
     macBtn.className += " active-btn";

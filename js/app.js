@@ -102,6 +102,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       macBtn.className += " active-btn";
       break;
     default:
+      downloadBtn.removeAttribute('download');
       downloadBtn.href = defaultDownloadUrl;
       linuxBtn.classList.remove("active-btn");
       macBtn.classList.remove("active-btn");

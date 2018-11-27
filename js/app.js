@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     "https://github.com/bdTechies/book-manager/releases/tag/v1.0.0";
 
   var windowsOsNameList = ["Cygwin", "Windows 98;", "Windows "];
-  var macOsNameList = ["Mac OS X", "Macintosh", "Mac"];
+  var macOsNameList = ["Mac OS X", "Macintosh", "Mac", "OS X"];
   var linuxOsNameList = [
     "CentOS",
     "Debian",

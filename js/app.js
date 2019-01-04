@@ -18,11 +18,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var macBtn = document.querySelector(".mac-os");
 
   var linuxDownloadUrl =
-    "https://github.com/bdTechies/book-manager/releases/download/v1.0.0/book-manager_1.0.0_amd64.deb";
+    "https://github.com/bdTechies/book-manager/releases/download/v1.0.1/book-manager_1.0.1_amd64.deb";
   var macDownloadUrl =
     "https://github.com/bdTechies/book-manager/releases/download/v1.0.0/book-manager_1.0.0.dmg";
   var windowsDownloadUrl =
-    "https://github.com/bdTechies/book-manager/releases/download/v1.0.0/book-manager_1.0.0.exe";
+    "https://github.com/bdTechies/book-manager/releases/download/v1.0.1/Book.Manager.Setup.1.0.1.exe";
   var defaultDownloadUrl =
     "https://github.com/bdTechies/book-manager/releases/tag/v1.0.0";
 
